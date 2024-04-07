@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        {/* ThemeProvider for Dark Mode*/}
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
           {children}
