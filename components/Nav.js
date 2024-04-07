@@ -4,9 +4,9 @@ import { usePathname } from "next/navigation";
 import { motion } from 'framer-motion'
 
 const links = [
-  { path: '/', name: 'home' },
-  { path: '/projects', name: 'my projects' },
-  { path: '/contact', name: 'contact' },
+  { path: '/', name: '首頁' },
+  { path: '/projects', name: '作品集' },
+  { path: '/contact', name: '與我聯絡' },
 ]
 
 export default function Nav({ containerStyles, linkStyles, underlineStyles }) {
