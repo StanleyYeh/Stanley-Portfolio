@@ -1,7 +1,9 @@
-export default function DevImg() {
+import Image from 'next/image'
+
+export default function DevImg({ containerStyles, imgSrc }) {
   return (
-    <>
-      DevImg
-    </>
+    <div className={`${containerStyles}`}>
+      <Image src={imgSrc} fill priority alt='' />
+    </div>
   );
 }

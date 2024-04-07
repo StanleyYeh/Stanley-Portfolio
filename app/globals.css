@@ -27,10 +27,10 @@
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
+    --background: 237 22% 20%;
     --foreground: 210 20% 98%;
     --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
+    --card-foreground: 300 0% 100%;
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
     --primary: 263.4 70% 50.4%;
@@ -65,4 +65,9 @@
 
 .subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light;
+}
+
+.badge {
+  @apply z-10 w-fit h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl
+  p-4 rounded-[10px] flex items-center gap-x-4;
 }

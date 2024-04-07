@@ -6,10 +6,14 @@ import {
   RiBriefcase4Fill,
   RiTeamFill,
   RiTodoFill,
-  RiArrowDownSLine
+  RiArrowDownSLine,
+  RiGithubFill
 } from 'react-icons/ri'
 
 //components
+import Socials from "./Socials";
+import DevImg from "./DevImg";
+import Badge from "./Badge";
 
 
 export default function Hero() {
@@ -42,9 +46,49 @@ export default function Hero() {
                 Download CV <Download size={18} />
               </Button>
             </div>
+            {/* socials */}
+            <Socials
+              containerStyles='flex gap-x-6 mx-auto xl:mx-0'
+              iconsStyles='text-foreground text-[22px] hover:text-primary
+              transition-all'
+            />
           </div>
-          {/* image */}
-          <div className=" hidden md:flex relative">image</div>
+          {/* Image & Badges */}
+          <div className=" hidden md:flex relative">
+            {/* Badge 1*/}
+            <Badge
+              containerStyles='absolute top-[25%] -left-[5rem]'
+              icon={<RiBriefcase4Fill />}
+              endCountNum={3}
+              badgeText='Years of Experience'
+            />
+            {/* Badge 2*/}
+            <Badge
+              containerStyles='absolute top-[80%] -left-[1rem]'
+              icon={<RiGithubFill />}
+              endCountNum={100}
+              endCountText='+'
+              badgeText='GitHub Projects'
+            />
+            {/* Badge 3*/}
+            <Badge
+              containerStyles='absolute top-[60%] -right-8'
+              icon={<RiTeamFill />}
+              endCountNum={2}
+              endCountText='K'
+              badgeText='Happy Clients'
+            />
+            {/* DevImg Background */}
+            <div className="bg-hero_shape2_light dark:-hero_shape2_dark
+              w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
+            </div>
+            {/* Devloper Img */}
+            <DevImg
+              containerStyles=' bg-hero_shape w-[510px] h-[462px] bg-no-repeat 
+                relative bg-bottom'
+              imgSrc='/hero/developer.png'
+            />
+          </div>
         </div>
         {/* icon */}
         <div className=" hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
