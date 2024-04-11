@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1">Hi, 我是<span className="inline-block">葉少芃</span> Stanley! </h1>
+            <h1 className="h1">Hi, 我是<span className="inline-block">葉少芃</span> Stanley Yeh! </h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               希望透過這個網站 能夠讓您多了解我開發過的專案與專業技能
             </p>
